@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Where we declare the document type
+                     and it tells the browser, when file is opened,
+                     what version html we are using (HTML 5) -->
+
+<!-- docs.emmet.io/cheat-sheet/ for other auto-complete methods by emmet
+(html + enter = this page(boilerplate code)) -->
+<html>
+<!-- Everything between <html> and </html> is html code -->
+
+<head>
+  <meta charset="utf-8">
+  <!-- meta elements give extra metadata to your html document,
+                                in this case utf-8 encoding system is used
+                                unicode-table.com for all symbols that utf-8 can encode
+                                the description metatag allows us to write a description
+                                of our website and it will show on google
+                                (w3schools metatag attributes, or developer.mozilla.org)-->
+  <title>Sam's Personal Site</title>
+</head>
+<table cellspacing="20">
+  <tr>
+    <td><img src="images/sam.png" alt="Sam profile picture"></td>
+    <td>
+      <h1> Sam Kadouh </h1>
+      <p>
+        <em>Junior <strong>Full-Stack</strong> Web Developer / Student</em>
+        <!-- <em> and <i> html tags are both the same in how the website renders it,
+              however <em> tells the browser that it should emphasize on the text thats betwwen <em>.
+              Remember HTML files are about structruing our code rather than styling it ( CSS files )
+              instead of using <b> use <strong> to apply bold styling for words-->
+      </p>
+      <p>
+        I am a student at Brunel University. I study Electrical & Computer Engineering, and currently on an internship at <strong><a href="https://www.moneyexpert.com/">Money Expert</a></strong>. I am working on becoming a full-stack web developer.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<body>
+
+  <!--If you cant find a picture of yourself on the internet, upload a picture on photobucket.com to get a URL -->
+  <!-- We can call the image differently by pasting it in the same folder as the index.html file -->
+
+  <hr />
+  <h3><strong>Education</strong></h3>
+  <ul>
+    <!-- <ul> stands for un-ordered list, so only bullet points show. <li>  stands for list item tag, an item included inside the ul-->
+    <li> The <strong>International Baccalaureate</strong> (<strong>IB</strong>) studied at the <strong>International College</strong> of Beirut, Lebanon.</li>
+    <li> Electrical and Computer Engineering with Professional Development studying at <strong>Brunel University London</strong>.</li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <p> </p>
+  <table cellspacing="10">
+    <!-- it is a better way to write the table like this, with the header, body, and foot
+    and treat it like an HTML element for later easier functionality in the code.
+    However we can write a table without using body, head or foot because <th is a table header element and the browser understands that this should be bold and on the top.
+  we can add a border attribute to the table but it wouldnt like nice because CSS offers better design code.-->
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+      <!--using HTML color table elements isnt a good idea since they are depracted elements. Remember HTML is for the website's structure, CSS is for styling, and Javascript is for behaviour -->
+    </thead>
+    <tbody>
+      <tr>
+        <td>July 2019-September 2019</td>
+        <td>Internship at an F&B chain</td>
+      </tr>
+      <tr>
+        <td>2020-2021</td>
+        <td>Internship at Money Expert</td>
+      </tr>
+    </tbody>
+
+
+
+  </table>
+  <hr>
+  <h3>Skills</h3>
+
+  <table cellspacing="10">
+    <tr>
+      <td>HTML 5 </td>
+      <td>⚡⚡⚡⚡ </td>
+    </tr>
+    <tr>
+      <td>JavaScript ES6 </td>
+      <td>⚡⚡</td>
+    </tr>
+    <tr>
+      <td>CSS 3</td>
+      <td>⚡⚡⚡</td>
+    </tr>
+  </table>
+
+  <!-- This is a table within a table. The main table holds two seperate tables eacdh containing 3 rows and 2 table data cells.-->
+
+
+
+
+
+
+
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <a href="contact-me.html">Contact Me</a>
+  <a href="inputs.html">Different Inputs</a>
+  <a href="challenge.html">Challenge 1</a>
+</body>
+
+</html>
